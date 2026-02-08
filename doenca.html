@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abranghe - Sobre a Doença</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'abranghe-green': '#99BC35',
+            'abranghe-gray': '#4A5568',
+            'haei-purple': '#6d338a',
+            'light-gray': '#F7FAFC',
+          },
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-abranghe-gray font-sans">
+  <!-- Header -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between h-24 items-center">
+
+        <div class="flex items-center space-x-4">
+            <a href="index.html" class="flex items-center space-x-4">
+            <img src="img/logo.png" alt="Abranghe" class="h-14 w-auto" />
+            </a>
+            <div class="hidden lg:block h-8 w-px bg-gray-200"></div>
+        </div>
+
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="hover:text-abranghe-green transition text-sm font-medium">Início</a>
+            <a href="sobre.html" class="hover:text-abranghe-green transition text-sm font-medium">Sobre Nós</a>
+            <a href="doenca.html" class="text-abranghe-green font-bold text-sm">Sobre a Doença</a>
+
+            <a href="paciente.html"
+            class="bg-abranghe-green text-white px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-lg transition">
+            Área do Paciente
+            </a>
+
+            <a href="referencias.html" class="hover:text-abranghe-green transition text-sm font-medium">Referências</a>
+            <a href="contato.html" class="hover:text-abranghe-green transition text-sm font-medium">Contato</a>
+        </div>
+
+        </div>
+    </div>
+    </nav>
+
+
+  <!-- Hero -->
+  <header class="relative bg-light-gray py-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-haei-purple font-bold uppercase tracking-widest text-xs mb-4 block">Informação confiável</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-abranghe-gray leading-tight mb-6">
+          Sobre a <span class="text-abranghe-green">Doença</span>
+        </h1>
+        <p class="text-lg text-gray-500">
+          Navegue pelos principais temas sobre Angioedema Hereditário (AEH).
+        </p>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-haei-purple/5 -skew-x-12 translate-x-20"></div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <!-- Cards -->
+        <a href="o-que-e-aeh.html" class="group bg-white border border-gray-100 rounded-[32px] p-10 shadow-2xl shadow-gray-200/40 hover:-translate-y-1 transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 bg-light-gray rounded-2xl flex items-center justify-center border border-gray-100">
+              <i data-lucide="book-open" class="text-abranghe-green"></i>
+            </div>
+            <h2 class="text-2xl font-bold group-hover:text-abranghe-green transition">O que é AEH</h2>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            Definição, mecanismo (C1-INH) e incidência no Brasil e no mundo.
+          </p>
+        </a>
+
+        <a href="historia-clinica.html" class="group bg-white border border-gray-100 rounded-[32px] p-10 shadow-2xl shadow-gray-200/40 hover:-translate-y-1 transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 bg-light-gray rounded-2xl flex items-center justify-center border border-gray-100">
+              <i data-lucide="clock" class="text-abranghe-green"></i>
+            </div>
+            <h2 class="text-2xl font-bold group-hover:text-abranghe-green transition">História clínica</h2>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            Linha do tempo e evolução do conhecimento sobre AEH.
+          </p>
+        </a>
+
+        <a href="sinais-sintomas.html" class="group bg-white border border-gray-100 rounded-[32px] p-10 shadow-2xl shadow-gray-200/40 hover:-translate-y-1 transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 bg-light-gray rounded-2xl flex items-center justify-center border border-gray-100">
+              <i data-lucide="activity" class="text-abranghe-green"></i>
+            </div>
+            <h2 class="text-2xl font-bold group-hover:text-abranghe-green transition">Sinais e sintomas</h2>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            Crises subcutâneas, abdominais e alerta de emergência (laringe).
+          </p>
+        </a>
+
+        <a href="diagnostico-tratamento.html" class="group bg-white border border-gray-100 rounded-[32px] p-10 shadow-2xl shadow-gray-200/40 hover:-translate-y-1 transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 bg-light-gray rounded-2xl flex items-center justify-center border border-gray-100">
+              <i data-lucide="test-tube-2" class="text-abranghe-green"></i>
+            </div>
+            <h2 class="text-2xl font-bold group-hover:text-abranghe-green transition">Diagnóstico e tratamento</h2>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            Exames, CID, PCDT/Portarias e visão geral do cuidado.
+          </p>
+        </a>
+      </div>
+
+      <div class="mt-12 flex flex-wrap gap-4">
+        <a href="paciente.html" class="bg-abranghe-green text-white px-8 py-4 rounded-xl font-bold hover:bg-opacity-90 transition shadow-xl shadow-abranghe-green/20">
+          Ir para Área do Paciente
+        </a>
+        <a href="referencias.html" class="border-2 border-gray-200 px-8 py-4 rounded-xl font-bold hover:bg-white transition">
+          Ver referências e diretrizes
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-light-gray py-20 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+        <!-- Sobre -->
+        <div class="col-span-2">
+            <div class="mb-6">
+            <img 
+                src="img/logo.png"
+                alt="Abranghe"
+                class="h-12 w-auto"
+            />
+            </div>
+            <p class="max-w-sm text-sm leading-relaxed text-gray-400">
+            Fundada em 2010, a Abranghe é uma organização sem fins lucrativos dedicada a apoiar pacientes e familiares
+            com Angioedema Hereditário no Brasil.
+            </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+            <h5 class="font-bold mb-6 text-abranghe-gray">Links Úteis</h5>
+            <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="index.html" class="hover:text-abranghe-green transition">Início</a></li>
+            <li><a href="sobre.html" class="hover:text-abranghe-green transition">Sobre Nós</a></li>
+            <li><a href="doenca.html" class="hover:text-abranghe-green transition">Sobre a Doença</a></li>
+            <li><a href="paciente.html" class="hover:text-abranghe-green transition">Área do Paciente</a></li>
+            <li><a href="referencias.html" class="hover:text-abranghe-green transition">Referências</a></li>
+            <li><a href="contato.html" class="hover:text-abranghe-green transition">Contato</a></li>
+            </ul>
+        </div>
+
+        <!-- Contato + Redes -->
+        <div>
+            <h5 class="font-bold mb-6 text-abranghe-gray">Fale Conosco</h5>
+            <p class="text-sm text-gray-400 mb-2">abranghe@gmail.com</p>
+            <p class="text-sm text-gray-400 mb-4">(11) 2503-2542 / (11) 97454-6118</p>
+
+            <div class="flex flex-wrap gap-4 text-gray-300">
+            <a href="https://www.instagram.com/abranghe"
+                target="_blank" rel="noopener"
+                class="hover:text-haei-purple transition flex items-center gap-2">
+                <i data-lucide="instagram"></i>
+                Instagram
+            </a>
+
+            <a href="https://www.facebook.com/AEHBrasil"
+                target="_blank" rel="noopener"
+                class="hover:text-haei-purple transition flex items-center gap-2">
+                <i data-lucide="facebook"></i>
+                Facebook
+            </a>
+
+            <a href="https://www.facebook.com/groups/1648041425415509/"
+                target="_blank" rel="noopener"
+                class="hover:text-haei-purple transition flex items-center gap-2">
+                <i data-lucide="users"></i>
+                Grupo Facebook
+            </a>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-gray-200 text-center text-xs font-bold uppercase tracking-widest text-gray-300">
+        © 2024 Abranghe • Associação Brasileira de Angioedema Hereditário
+        </div>
+    </div>
+    </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
