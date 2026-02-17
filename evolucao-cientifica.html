@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abranghe - Evolução Científica do AEH</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'abranghe-green': '#99BC35',
+            'abranghe-gray': '#4A5568',
+            'haei-purple': '#6d338a',
+            'light-gray': '#F7FAFC',
+          },
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-abranghe-gray font-sans">
+
+  <!-- Header -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between h-24 items-center">
+
+        <div class="flex items-center space-x-4">
+          <a href="index.html" class="flex items-center space-x-4">
+            <img src="img/logo.png" alt="Abranghe" class="h-16 w-auto" />
+          </a>
+          <div class="hidden lg:block h-8 w-px bg-gray-200"></div>
+        </div>
+
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-abranghe-green transition text-sm font-medium">Início</a>
+          <a href="sobre.html" class="hover:text-abranghe-green transition text-sm font-medium">Sobre Nós</a>
+          <a href="doenca.html" class="text-abranghe-green font-bold text-sm">Sobre a Doença</a>
+          <a href="paciente.html"
+            class="bg-abranghe-green text-white px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-lg transition">
+            Área do Paciente
+          </a>
+          <a href="referencias.html" class="hover:text-abranghe-green transition text-sm font-medium">Referências</a>
+          <a href="contato.html" class="hover:text-abranghe-green transition text-sm font-medium">Contato</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative bg-light-gray py-16 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-haei-purple font-bold uppercase tracking-widest text-xs mb-4 block">
+          Sobre a doença
+        </span>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-abranghe-gray leading-tight mb-6">
+          Evolução <span class="text-abranghe-green">Científica</span> do AEH
+        </h1>
+        <p class="text-lg text-gray-500">
+          Principais marcos que transformaram o diagnóstico e a compreensão do Angioedema Hereditário.
+        </p>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-haei-purple/5 -skew-x-12 translate-x-20"></div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="py-20">
+    <div class="max-w-7xl mx-auto px-6 space-y-10">
+
+      <!-- Linha do tempo -->
+      <section class="bg-white border border-gray-100 rounded-[32px] p-10 md:p-12 shadow-2xl shadow-gray-200/40">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-light-gray rounded-2xl flex items-center justify-center border border-gray-100">
+            <i data-lucide="clock" class="text-abranghe-green"></i>
+          </div>
+          <h2 class="text-2xl font-bold">Linha do tempo</h2>
+        </div>
+
+       <ol class="space-y-5 text-gray-600 leading-relaxed">
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">1882</span>
+            <span><strong>Heinrich Quincke</strong> descreveu o inchaço agudo da pele e mucosas.</span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">1888</span>
+            <span><strong>William Osler</strong> identificou o padrão hereditário ao observar casos em uma mesma família.</span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">1963</span>
+            <span>
+            <strong>Donaldson e Evans</strong> identificaram a deficiência do
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">C1-INH</span>
+            como causa do AEH.
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">1986</span>
+            <span><strong>R. P. Warin</strong> e colaboradores fizeram a primeira descrição de AEH com C1-esterase normal.</span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2000</span>
+            <span>
+            <strong>Konrad Bork</strong> e colaboradores apresentaram uma das primeiras séries de pacientes com
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">C1-INH normal</span>
+            e sugeriram o AEH tipo III.
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2006</span>
+            <span>
+            <strong>Dewald, Bork e Cichon</strong> descreveram as bases moleculares do AEH com C1-INH normal com mutações no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">F12</span>.
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2011</span>
+            <span>
+            <strong>Konrad Bork</strong> e colaboradores descreveram mutação no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">F12</span>
+            (deleção de 72 bases).
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2013</span>
+            <span>
+            <strong>Nóra Kiss</strong> e colaboradores identificaram nova mutação no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">F12</span>
+            (duplicação de 18 bases).
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2017</span>
+            <span>
+            <strong>Valeria Bafunno</strong> e colaboradores identificaram mutação no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">ANGPT1</span>
+            associada a AEH com C1-INH normal; e <strong>Konrad Bork</strong> e colaboradores descreveram mutações no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">PLG</span>.
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2019</span>
+            <span>
+            <strong>Konrad Bork</strong> e colaboradores encontraram mutação no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">KNG1</span>
+            (cininogênio 1).
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2020</span>
+            <span>
+            <strong>Anastasia Ariano</strong> e colaboradores identificaram mutação no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">MYOF</span>
+            (mioferlina) em pacientes com C1-INH normal.
+            </span>
+        </li>
+
+        <li class="flex gap-4">
+            <span class="text-haei-purple font-bold">2021</span>
+            <span>
+            <strong>Konrad Bork</strong> e colaboradores descreveram mutação no gene
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-abranghe-green/10 text-abranghe-green border border-abranghe-green/20">HS3ST6</span>,
+            associada a AEH com C1-INH normal.
+            </span>
+        </li>
+
+        </ol>
+
+      </section>
+
+      <!-- Contexto -->
+      <section class="bg-light-gray border border-gray-100 rounded-[32px] p-10 md:p-12">
+        <h2 class="text-2xl font-bold mb-4">Por que isso é importante?</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Ao longo das últimas décadas, o avanço científico permitiu compreender que o AEH não é uma alergia comum,
+          mas uma condição mediada principalmente por mecanismos envolvendo bradicinina.
+          Esse conhecimento possibilitou melhorar o diagnóstico e desenvolver tratamentos específicos.
+        </p>
+      </section>
+
+      <!-- Botões -->
+      <div class="flex flex-wrap gap-4">
+        <a href="doenca.html" class="border-2 border-gray-200 px-8 py-4 rounded-xl font-bold hover:bg-white transition">
+          Voltar para Sobre a Doença
+        </a>
+        <a href="diagnostico-tratamento.html"
+           class="bg-abranghe-green text-white px-8 py-4 rounded-xl font-bold hover:bg-opacity-90 transition shadow-xl shadow-abranghe-green/20">
+          Ir para diagnóstico e tratamento
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+    <footer class="bg-light-gray py-20 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+        <!-- Sobre -->
+        <div class="col-span-2">
+          <div class="mb-6">
+            <img 
+              src="img/logo.png"
+              alt="Abranghe"
+              class="h-12 w-auto"
+            />
+          </div>
+          <p class="max-w-sm text-sm leading-relaxed text-gray-400">
+            Fundada em 2010, a Abranghe é uma organização sem fins lucrativos dedicada a apoiar pacientes e familiares
+            com Angioedema Hereditário no Brasil.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h5 class="font-bold mb-6 text-abranghe-gray">Links Úteis</h5>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="index.html" class="hover:text-abranghe-green transition">Início</a></li>
+            <li><a href="sobre.html" class="hover:text-abranghe-green transition">Sobre Nós</a></li>
+            <li><a href="doenca.html" class="hover:text-abranghe-green transition">Sobre a Doença</a></li>
+            <li><a href="paciente.html" class="hover:text-abranghe-green transition">Área do Paciente</a></li>
+            <li><a href="referencias.html" class="hover:text-abranghe-green transition">Referências</a></li>
+            <li><a href="contato.html" class="hover:text-abranghe-green transition">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato + Redes -->
+        <div>
+          <h5 class="font-bold mb-6 text-abranghe-gray">Fale Conosco</h5>
+          <p class="text-sm text-gray-400 mb-2">abranghe@gmail.com</p>
+          <p class="text-sm text-gray-400 mb-4">(11) 2503-2542 / (11) 97454-6118</p>
+
+          <div class="flex flex-wrap gap-4 text-gray-300">
+            <a href="https://www.instagram.com/abranghe"
+              target="_blank" rel="noopener"
+              class="hover:text-haei-purple transition flex items-center gap-2">
+              <i data-lucide="instagram"></i>
+              Instagram
+            </a>
+
+            <a href="https://www.facebook.com/AEHBrasil"
+              target="_blank" rel="noopener"
+              class="hover:text-haei-purple transition flex items-center gap-2">
+              <i data-lucide="facebook"></i>
+              Facebook
+            </a>
+
+            <a href="https://www.facebook.com/groups/1648041425415509/"
+              target="_blank" rel="noopener"
+              class="hover:text-haei-purple transition flex items-center gap-2">
+              <i data-lucide="users"></i>
+              Grupo Facebook
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-gray-200 text-center text-xs font-bold uppercase tracking-widest text-gray-300">
+        © 2024 Abranghe • Associação Brasileira de Angioedema Hereditário
+      </div>
+    </div>
+  </footer>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
